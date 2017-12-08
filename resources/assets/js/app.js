@@ -16,8 +16,10 @@ window.Vue = require('vue');
  */
 
 import Blogs from './components/Blogs.vue';
+import ListBlogs from './components/ListBlogs.vue';
 
 Vue.component('blogs', Blogs);
+Vue.component('list-blogs', ListBlogs);
 
 const app = new Vue({
     el: '#app'

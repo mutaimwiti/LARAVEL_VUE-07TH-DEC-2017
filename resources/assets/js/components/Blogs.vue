@@ -6,7 +6,14 @@
                     <div class="panel-heading">Blogs</div>
 
                     <div class="panel-body">
-                        Blogs here!
+                        <div class="row">
+                            <div class="col-md-6">
+                                <list-blogs :mblogs="blogs"></list-blogs>
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -16,8 +23,16 @@
 
 <script>
     export default {
+        data() {
+            return {
+                blogs: []
+            }
+        },
+
         mounted() {
-            console.log('Component mounted.')
+            axios.get('/api/blogs').then(response => {
+                this.blogs = response.data;
+            });
         }
     }
 </script>
