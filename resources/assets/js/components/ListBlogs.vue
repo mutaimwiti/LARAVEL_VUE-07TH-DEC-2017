@@ -3,10 +3,11 @@
         <div class="panel">
             <div class="panel-heading">Blogs</div>
             <div class="panel-body">
-                <table class="table">
+                <table class="table table-bordered">
                     <thead>
                     <tr>
                         <th>Title</th>
+                        <th>Body</th>
                     </tr>
                     </thead>
                     <tbody>

@@ -43010,6 +43010,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['mblogs'],
@@ -43030,7 +43031,7 @@ var render = function() {
       _c("div", { staticClass: "panel-heading" }, [_vm._v("Blogs")]),
       _vm._v(" "),
       _c("div", { staticClass: "panel-body" }, [
-        _c("table", { staticClass: "table" }, [
+        _c("table", { staticClass: "table table-bordered" }, [
           _vm._m(0, false, false),
           _vm._v(" "),
           _c(
@@ -43053,7 +43054,13 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [_c("tr", [_c("th", [_vm._v("Title")])])])
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [_vm._v("Title")]),
+        _vm._v(" "),
+        _c("th", [_vm._v("Body")])
+      ])
+    ])
   }
 ]
 render._withStripped = true
