@@ -7,11 +7,8 @@
 
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-6">
-                                <list-blogs :mblogs="blogs"></list-blogs>
-                            </div>
-                            <div class="col-md-6">
-
+                            <list-blogs :mblogs="blogs"></list-blogs>
+                            <div class="col-md-4">
                             </div>
                         </div>
                     </div>

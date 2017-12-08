@@ -42876,9 +42876,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -42910,16 +42907,16 @@ var render = function() {
           _c("div", { staticClass: "panel-heading" }, [_vm._v("Blogs")]),
           _vm._v(" "),
           _c("div", { staticClass: "panel-body" }, [
-            _c("div", { staticClass: "row" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6" },
-                [_c("list-blogs", { attrs: { mblogs: _vm.blogs } })],
-                1
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6" })
-            ])
+            _c(
+              "div",
+              { staticClass: "row" },
+              [
+                _c("list-blogs", { attrs: { mblogs: _vm.blogs } }),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-md-4" })
+              ],
+              1
+            )
           ])
         ])
       ])
@@ -43013,12 +43010,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['mblogs'],
@@ -43034,28 +43025,24 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "panel panel-default" }, [
-          _c("div", { staticClass: "panel-heading" }, [_vm._v("Blogs")]),
+  return _c("div", { staticClass: "col-md-8" }, [
+    _c("div", { staticClass: "panel" }, [
+      _c("div", { staticClass: "panel-heading" }, [_vm._v("Blogs")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "panel-body" }, [
+        _c("table", { staticClass: "table" }, [
+          _vm._m(0, false, false),
           _vm._v(" "),
-          _c("div", { staticClass: "panel-body" }, [
-            _c("table", { staticClass: "table" }, [
-              _vm._m(0, false, false),
-              _vm._v(" "),
-              _c(
-                "tbody",
-                _vm._l(_vm.mblogs, function(blog) {
-                  return _c("tr", [
-                    _c("td", [_vm._v(_vm._s(blog.title))]),
-                    _vm._v(" "),
-                    _c("td", [_vm._v(_vm._s(blog.body))])
-                  ])
-                })
-              )
-            ])
-          ])
+          _c(
+            "tbody",
+            _vm._l(_vm.mblogs, function(blog) {
+              return _c("tr", [
+                _c("td", [_vm._v(_vm._s(blog.title))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(blog.body))])
+              ])
+            })
+          )
         ])
       ])
     ])
@@ -43066,13 +43053,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", [
-      _c("tr", [
-        _c("th", [_vm._v("Title")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Body")])
-      ])
-    ])
+    return _c("thead", [_c("tr", [_c("th", [_vm._v("Title")])])])
   }
 ]
 render._withStripped = true
