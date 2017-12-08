@@ -8,8 +8,7 @@
                     <div class="panel-body">
                         <div class="row">
                             <list-blogs :mblogs="blogs"></list-blogs>
-                            <div class="col-md-4">
-                            </div>
+                            <add-blog v-on:added="added()"></add-blog>
                         </div>
                     </div>
                 </div>
@@ -27,9 +26,19 @@
         },
 
         mounted() {
-            axios.get('/api/blogs').then(response => {
-                this.blogs = response.data;
-            });
+            this.getBlogs();
+        },
+
+        methods: {
+            getBlogs: function () {
+                axios.get('/api/blogs').then(response => {
+                    this.blogs = response.data;
+                });
+            },
+
+            added: function() {
+                this.getBlogs();
+            }
         }
     }
 </script>
