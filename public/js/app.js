@@ -42913,7 +42913,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-10" }, [
+        _c("div", { staticClass: "col-md-12" }, [
           _c("div", { staticClass: "panel panel-default" }, [
             _c("div", { staticClass: "panel-heading" }, [_vm._v("Blogs")]),
             _vm._v(" "),
